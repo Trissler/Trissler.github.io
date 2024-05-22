@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurse - Mandy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7f6;
+            background-image: url('background.jpg'); /* Hintergrundbild hinzufügen */
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #76b39d;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            margin: 0;
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
+        }
+        nav {
+            background-color: #5f977a;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 40px 20px;
+        }
+        .course-section {
+            background-color: rgba(255, 255, 255, 0.8); /* Leicht transparentes Weiß für besseren Kontrast */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+        .course-section img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            display: block;
+        }
+        .course-section h2 {
+            color: #d32f2f;
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .course-section p {
+            line-height: 1.6;
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        .course-section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .course-section li {
+            background-color: #76b39d;
+            color: #fff;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: #5f977a;
+            padding: 10px;
+            text-align: center;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .course-section img {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Kurse</h1>
+    </header>
+    <nav>
+        <a href="index.html">Startseite</a>
+        <a href="ueber-mich.html">Über mich</a>
+        <a href="aktuelles.html">Aktuelles</a>
+		<a href="beratung.html">Beratung</a>
+    </nav>
+    <main>
+        <div class="course-section">
+            <h2>Yoga</h2>
+            <img src="bild1.jpg" alt="Yoga Kurs">
+            <p>Erlebe die transformative Kraft des Yoga! Unsere Yoga-Kurse sind für alle Level geeignet und bieten eine Mischung aus körperlicher Praxis und Meditation, um Körper und Geist in Einklang zu bringen.</p>
+            <ul>
+                <li>Montag: 18:00 - 19:00 Uhr</li>
+                <li>Mittwoch: 07:00 - 08:00 Uhr</li>
+                <li>Freitag: 18:00 - 19:00 Uhr</li>
+            </ul>
+        </div>
+        <div class="course-section">
+            <h2>Pilates</h2>
+            <img src="bild2.jpg" alt="Pilates Kurs">
+            <p>Stärke deinen Körper mit unseren Pilates-Kursen! Diese Kurse konzentrieren sich auf die Kernmuskulatur, verbessern die Körperhaltung und fördern die Flexibilität.</p>
+            <ul>
+                <li>Dienstag: 18:00 - 19:00 Uhr</li>
+                <li>Donnerstag: 07:00 - 08:00 Uhr</li>
+                <li>Samstag: 10:00 - 11:00 Uhr</li>
+            </ul>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mandy Klaaßen. Alle Rechte vorbehalten.</p>
+    </footer>
+</body>
+</html>

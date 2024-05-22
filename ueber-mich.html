@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Über mich - [Dein Name]</title>
+    <title>Über mich - Mandy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #eaf4e3;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7f6;
+            background-image: url('bild1.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             color: #333;
             margin: 0;
             padding: 0;
         }
         header {
-            background-color: #a8d5ba;
+            background-color: #76b39d;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
             color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
         }
         nav {
-            background-color: #81c784;
+            background-color: #5f977a;
             padding: 15px;
             text-align: center;
         }
@@ -33,35 +41,62 @@
             font-weight: bold;
         }
         main {
-            padding: 40px;
-            text-align: center;
+            padding: 40px 20px;
         }
-        .content {
+        .about-section {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 40px;
-        }
-        .content div {
-            margin: 10px;
+            align-items: center;
+            margin-bottom: 60px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.8); /* Leicht transparentes Weiß für besseren Kontrast */
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
         }
-        .content img {
-            max-width: 100%;
-            border-radius: 10px;
+        .about-section img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .about-section div {
+            max-width: 600px;
+            margin: 20px;
+        }
+        .about-section h2 {
+            color: #d32f2f;
+            font-family: 'Playfair Display', serif;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            line-height: 1.6;
+            color: #555;
+            font-size: 1.2em;
+            margin-bottom: 20px;
         }
         footer {
-            background-color: #81c784;
+            background-color: #5f977a;
             padding: 10px;
             text-align: center;
             color: #fff;
             position: fixed;
             width: 100%;
             bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-section img, .about-section div {
+                max-width: 100%;
+            }
         }
     </style>
 </head>
@@ -71,19 +106,44 @@
     </header>
     <nav>
         <a href="index.html">Startseite</a>
-        <a href="terminkalender.html">Terminkalender</a>
         <a href="aktuelles.html">Aktuelles</a>
+		<a href="kurse.html">Kurse</a>
+		<a href="beratung.html">Beratung</a>
     </nav>
     <main>
-        <section class="content">
+        <div class="about-section">
+            <img src="bild1.jpg" alt="Bild von Mandy">
+			
             <div>
-                <img src="dein-bild.jpg" alt="Bild von [Dein Name]">
-                <p>Hallo, ich bin [Dein Name], deine Expertin für ganzheitliche Gesundheit. Mit meiner langjährigen Erfahrung in Yoga, Pilates und Ernährungsberatung unterstütze ich dich auf deinem Weg zu einem gesunden und glücklichen Leben.</p>
+                <h2>Hallo, ich bin Mandy</h2>
+                <p>Willkommen auf meiner Reise durch ganzheitliche Gesundheit und Wohlbefinden! mein Name ist Mandy, ich bin 27 Jahre alt & lebe gemeinsam mit meinem Mann, unserem Hund & Pferde in der Nähe von Stuttgart.</p>
+                
+                <p>Als zertifizierter Ernährungs-, Gesundheits- & Life Coach (IIN) unterstütze ich ambitionierten Menschen zu mehr Wohlbefinden, Energie, Selbstvertrauen & Gesundheit. Und das ganzheitlich, durch einfach umsetzbare Schritte.</p>
+
+                <p>Als leidenschaftlicher Sportler war ich schon immer sehr an einen gesunden Lifestyle, einer ausgewogenen Ernährung und einem gestärkten Mindset interessiert. Dennoch habe ich mich zunächst für einen “klassischen Beruf” entschieden & war bei verschiedenen Unternehmen als Projektmanager international tätig.</p>
+
+				<p>Mein Alltag war immer sehr voll und ich kenne Stress, Überforderung & Selbstzweifel nur all zu gut. Ich weiß genau, wie sich der Leistungsdruck anfühlt, wie sich körperliche Symptome in Form von Bauch- oder Kopfschmerzen, Zyklusbeschwerden, Verspannungen & Blockaden oder einem geschwächten Immunsystem bemerkbar machen.</p>
+
+                <p>Doch es geht auch anders! Während meiner Ausbildung am Institut für Integrative Ernährung habe ich mehr 100 verschiedene Ernährungstheorien kennengelernt, nachhaltig einen gesunden ausgewogenen Lifestyle in meinem Alltag etabliert & mein eigenes Business im Bereich der ganzheitlichen Gesundheit gestartet.</p>
+
+                <p>Darüberhinaus konnte ich zahlreiche Menschen auf dem Weg zu mehr Wohlbefinden, Energie, Vitalität & Selbstvertrauen verhelfen kann.</p>
+
+                <p>Ich möchte meine Expertise, mein Wissen & meine Erfahrung gerne mit dir teilen & dir helfen, nachhaltig ein gestärktes Mindset, eine ausgewogene Ernährung & einen gesunden Lifestyle in deinem vollen Alltag zu etablieren. Und das mit einfach umsetzbaren Schritten, ohne deinen Kalender noch voller zu machen.</p>
+
+                <p>Wenn auch du wieder mehr Wohlbefinden, Ausgleich & Balance im Alltag möchtest & lernen willst wie du deine persönlichen Ziele spielerisch erreichst habe ich ein perfekt passendes special Angebot für dich.</p>
+
+                <p>Ich möchte dich herzlich zu einem kostenfreien Erst-Call mit mir einladen & dir die Möglichkeit geben ungeteilte Aufmerksamkeit von jemandem der dein Wohlbefinden unterstützen möchte zu erhalten.</p>
+
+                <p>Klingt gut oder?</p>
+				
+  
             </div>
-        </section>
+			
+        </div>
+		
     </main>
     <footer>
-        <p>&copy; 2024 [Dein Name]. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Mandy Klaaßen. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>

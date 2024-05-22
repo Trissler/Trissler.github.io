@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ganzheitliche Gesundheit mit [Dein Name]</title>
+    <title>Ganzheitliche Gesundheit mit Mandy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #eaf4e3;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f7f6;
             color: #333;
             margin: 0;
             padding: 0;
+            background-image: url('bild2.jpg'); /* Hintergrundbild hinzufügen */
+            background-size: cover;
+            /*background-attachment: fixed;*/
+            background-repeat: no-repeat;
         }
         header {
-            background-color: #a8d5ba;
+            background-color: #76b39d;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
             color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5em;
         }
         nav {
-            background-color: #81c784;
+            background-color: #5f977a;
             padding: 15px;
             text-align: center;
         }
@@ -33,29 +41,50 @@
             font-weight: bold;
         }
         main {
-            padding: 40px;
-            text-align: center;
+            padding: 40px 20px;
         }
-        .content {
+        section {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 40px;
-        }
-        .content div {
-            margin: 10px;
+            align-items: center;
+            margin-bottom: 60px;
+            text-align: left;
+            background-color: rgba(255, 255, 255, 0.9); /* Leicht transparentes Weiß */
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
             padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            max-width: 300px;
+            margin-bottom: 40px;
         }
-        .content img {
-            max-width: 100%;
+        section:nth-child(odd) {
+            background-color: #f9f9f9; /* Leichtes Grau für Abwechslung */
+        }
+        section img {
+            width: 100%;
+            max-width: 500px;
+            height: auto;
             border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+        }
+        section div {
+            max-width: 500px;
+            margin: 10px;
+        }
+        section h2 {
+            color: #388e3c;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        section p {
+            line-height: 1.6;
+            color: #666;
+            font-size: 1.1em;
         }
         footer {
-            background-color: #81c784;
+            background-color: #5f977a;
             padding: 10px;
             text-align: center;
             color: #fff;
@@ -63,25 +92,73 @@
             width: 100%;
             bottom: 0;
         }
+        @media (max-width: 768px) {
+            section {
+                flex-direction: column;
+                text-align: center;
+            }
+            section img, section div {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Willkommen bei [Dein Name]s Gesundheitswelt</h1>
+        <h1>Willkommen bei Mandys Gesundheitswelt</h1>
     </header>
     <nav>
         <a href="ueber-mich.html">Über mich</a>
-        <a href="terminkalender.html">Terminkalender</a>
         <a href="aktuelles.html">Aktuelles</a>
+        <a href="kurse.html">Kurse</a> <!-- Neuer Reiter -->
+		<a href="beratung.html">Beratung</a>
     </nav>
     <main>
-        <section id="intro">
-            <h2>Ganzheitliche Gesundheit, Ernährung, Yoga und Pilates</h2>
-            <p>Entdecke deine innere Balance und fühle dich wohl in deinem Körper. Hier findest du alles, was du für ein gesundes und erfülltes Leben brauchst.</p>
+        <section>
+            <img src="bild1.jpg" alt="Bild zu Balance">
+            <div>
+                <h2>Entdecke deine innere Balance</h2>
+                <p>Erfahre mehr über die Bedeutung von innerer Balance und wie du sie durch Yoga und Meditation erreichen kannst.</p>
+            </div>
+        </section>
+        <section>
+            <img src="bild2.jpg" alt="Bild zu gesunder Ernährung">
+            <div>
+                <h2>Gesunde Ernährung</h2>
+                <p>Tipps und Tricks für eine ausgewogene Ernährung, die deinem Körper gut tut und dir Energie gibt.</p>
+            </div>
+        </section>
+        <section>
+            <img src="bild3.jpg" alt="Bild zu Yoga und Pilates">
+            <div>
+                <h2>Yoga und Pilates</h2>
+                <p>Entdecke die Vorteile von Yoga und Pilates für deinen Körper und Geist. Finde die besten Übungen für dich.</p>
+            </div>
+        </section>
+        <section>
+            <img src="bild4.jpg" alt="Bild zu Workshops">
+            <div>
+                <h2>Workshops und Events</h2>
+                <p>Informiere dich über unsere neuesten Workshops und Events. Sei dabei und lerne in der Gemeinschaft.</p>
+            </div>
+        </section>
+        <section>
+            <img src="bild5.jpg" alt="Bild zu Erfolgsgeschichten">
+            <div>
+                <h2>Erfolgsgeschichten</h2>
+                <p>Lies inspirierende Erfolgsgeschichten von Menschen, die ihre Gesundheit und ihr Wohlbefinden verbessert haben.</p>
+            </div>
+        </section>
+        <section>
+            <img src="bild6.jpg" alt="Bild zu Kontakt">
+            <div>
+                <h2>Kontakt</h2>
+                <p>Hast du Fragen oder möchtest du dich zu einem Kurs anmelden? Kontaktiere mich gerne über das Kontaktformular.</p>
+            </div>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 [Dein Name]. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2024 Mandy Klaaßen. Alle Rechte vorbehalten.</p>
     </footer>
 </body>
 </html>
